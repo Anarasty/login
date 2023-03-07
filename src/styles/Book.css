@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.book_page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80vh;
+  font-family: "Ubuntu", sans-serif;
+}
+.book_img_container,
+.form_container {
+  width: 30%;
+}
+.book_info {
+  width: 40%;
+  padding: 0 90px;
+  line-height: 40px;
+}
+
+.form_container {
+  color: #3e54ac;
+}
+.book_img_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.book_img_container img {
+  width: 65%;
+}
+.book_img_container input {
+  margin: 0;
+  padding: 0;
+}
+
+.book_info h2 {
+  font-size: 2.5rem;
+  color: #3e54ac;
+}
+.book_info p {
+  font-size: 1.3rem;
+  color: #3e54ac;
+}
+
+.form_container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_container form label {
+  font-size: 2rem;
+  line-height: 50px;
+}
+
+.form_container form input {
+  width: 50%;
+  float: right;
+  border: none;
+  border-bottom: 3px solid #3e54ac;
+  background-color: transparent;
+  color: #3e54ac;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0 20px;
+}
+
+.form_container form button {
+  margin: 50px auto;
+  padding: 10px 20px;
+  background-color: transparent;
+  font-family: "Ubuntu", sans-serif;
+  border: 3px solid;
+  color: #ecf2ff;
+  transition: 0.3s ease;
+  border-radius: 30px;
+}
+
+.form_container form button:hover {
+  color: #3e54ac;
+}
+
+@media screen and (max-width: 900px) {
+  .book_page {
+    flex-direction: column;
+  }
+  .book_info {
+    width: 40%;
+    padding: 0 10px;
+  }
+  .book_img_container,
+  .form_container, .book_info {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .book_img_container img {
+    width: 45%;
+    margin: 10px;
+  }
+  .book_info h2, p {
+    font-size: 1.2rem;
+  }
+  .form_container form label {
+    font-size: 1.2rem;
+    line-height: 40px;
+  }
+}

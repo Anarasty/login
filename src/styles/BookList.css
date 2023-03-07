@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+li {
+  list-style: none;
+}
+.book-list-main {
+  font-family: "Ubuntu", sans-serif;
+  min-height: 80vh;
+}
+
+.book-list-search-conteiner input[type="text"],
+select {
+  font-size: 2rem;
+  margin: 50px;
+  background-color: transparent;
+  color: #3e54ac;
+  border: none;
+  border-bottom: 3px solid;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.book-list-content img {
+  width: 100%;
+}
+
+.book-list-content ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.book-list-content ul li {
+  color: #3e54ac;
+  font-size: 1.5rem;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px #3e54ac;
+  border-radius: 20px;
+  padding: 10px;
+  transition: 0.3s ease;
+  line-height: 50px;
+}
+.book-list-content ul li:hover {
+  transform: scale(1.05);
+}
+
+.showBook {
+  color: #ecf2ff;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 5px 10px;
+  border: 1px solid #ecf2ff;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.showBook:hover {
+  box-shadow: 0 0 10px #ecf2ff;
+}
+
+@media screen and (max-width: 900px) {
+  .book-list-search-conteiner input[type="text"],
+  select {
+    font-size: 1.2rem;
+    margin: 50px;
+  }
+  .book-list-content ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .book-list-content ul li {
+    font-size: 1.2rem;
+  margin: 30px;
+  }
+  .showBook {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .book-list-content ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .book-list-content img {
+    width: 50%;
+  }
+}

@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cart_container {
+  width: 100%;
+  min-height: 80vh;
+  width: 90%;
+  margin: 20px auto;
+  color: #3e54ac;
+  font-family: "Ubuntu", sans-serif;
+}
+.cart_container h2 {
+  font-size: 4rem;
+}
+.cart_container .total_h3 {
+  font-size: 2rem;
+}
+
+.cart_empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.cart_empty i {
+  font-size: 6rem;
+}
+
+.cart_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart_items_container {
+  border: 1px solid black;
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart_items_container .info_container,
+.action_container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+.cart_items_container .action_container {
+  justify-content: space-around;
+}
+
+.purchase_container {
+  margin-top: 80px;
+  align-self: flex-start;
+}
+.purchase-button {
+  color: #3e54ac;
+  background-color: #ecf2ff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+  border: 4px solid transparent;
+}
+
+.purchase-button:disabled {
+  opacity: 0.5;
+}
+
+.trash_btn {
+  background-color: transparent;
+  border: none;
+  color: #3e54ac;
+  transition: 0.3s ease;
+}
+.trash_btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 900px) {
+  .cart_container h2 {
+    font-size: 2rem;
+  }
+  .cart_container .total_h3 {
+    font-size: 1.2rem;
+  }
+  .cart_empty {
+    font-size: 1.2rem;
+  }
+  .cart_empty i {
+    font-size: 3rem;
+    margin: 20px;
+  }
+  .cart_items_container {
+    margin: 20px   0;
+  }
+  .cart_items_container h1, h3 {
+    font-size: 1rem;
+  }
+  .action_container p{
+    font-size: 1rem;
+  }
+}
